@@ -8,14 +8,14 @@ export const generatePrimeMultiples = limit => {
   const primes = primeList(limit);
   const multiples = [];
 
-  // Generate and append the upper range of primes
+  // Generate and append the primes at the top of the multiplication table
   let top = [...primes];
   top.unshift(1);
   multiples.push(top);
 
   for (let i = 0; i < primes.length; i++) {
     const row = [];
-    // add the current prime
+    // add the prime that serves as left hand marker
     row.push(primes[i])
 
     for (let j = 0; j < primes.length; j++) {
