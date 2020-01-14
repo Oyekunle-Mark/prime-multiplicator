@@ -4,7 +4,7 @@
  * @param {number} num The number to be checked
  * @returns {boolean} true/false to confirm primality
  */
-const isPrime = num => {
+export const isPrime = num => {
   let lower = 2;
   const upper = Math.sqrt(num);
 
@@ -22,12 +22,10 @@ const isPrime = num => {
  * @param {number} end The upper limit of the prime numbers
  * @returns {number[]} The list of prime numbers
  */
-const primeList = end => {
+export const primeList = end => {
   const primes = [];
 
   for (let i = 2; i <= end; i++) if (isPrime(i)) primes.push(i);
 
   return primes;
 };
-
-export default primeList;
