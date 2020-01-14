@@ -15,3 +15,11 @@ const isPrime = num => {
 
   return true;
 };
+
+const primeList = end => {
+  const primes = [];
+
+  for (let i = 2; i <= end; i++) if (isPrime(i)) primes.push(i);
+
+  return primes;
+};
