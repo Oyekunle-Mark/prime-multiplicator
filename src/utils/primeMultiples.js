@@ -12,10 +12,10 @@ export const generatePrimeMultiples = limit => {
     const row = [];
 
     for (let j = 0; j < primes.length; j++) {
-      row.append(primes[i] * primes[j]);
+      row.push(primes[i] * primes[j]);
     }
 
-    multiples.append(row);
+    multiples.push(row);
   }
 
   return multiples;
