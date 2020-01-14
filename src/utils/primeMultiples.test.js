@@ -9,6 +9,13 @@ test('Return the multiples of primes', () => {
   ];
   expect(multiples).toEqual(result);
 
+  multiples = generatePrimeMultiples(1);
+  result = [
+    [1, 2],
+    [2, 4],
+  ];
+  expect(multiples).toEqual(result);
+
   multiples = generatePrimeMultiples(3);
   result = [
     [1, 2, 3, 5],
