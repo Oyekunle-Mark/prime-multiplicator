@@ -36,3 +36,13 @@ test('Return the multiples of primes', () => {
   ];
   expect(multiples).toEqual(result);
 });
+
+test('Should throw error when argument is less than 1', () => {
+  expect(() => {
+    generatePrimeMultiples(-23);
+  }).toThrow('You need to supply a positive number to generate multiples.');
+
+  expect(() => {
+    generatePrimeMultiples(0);
+  }).toThrow('You need to supply a positive number to generate multiples.');
+});
