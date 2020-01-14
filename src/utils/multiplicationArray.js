@@ -6,4 +6,17 @@ export const generatePrimeMultiples = limit => {
   }
 
   const primes = primeList(limit);
+  const multiples = [];
+
+  for (let i = 0; i < primes.length; i++) {
+    const row = [];
+
+    for (let j = 0; j < primes.length; j++) {
+      row.append(primes[i] * primes[j]);
+    }
+
+    multiples.append(row);
+  }
+
+  return multiples;
 };
