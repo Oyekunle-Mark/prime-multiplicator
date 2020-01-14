@@ -4,6 +4,7 @@ import { primeList } from './primeList';
  * Generates the prime multiplication table.
  * Adds a header and left hand marker to it so it looks like
  * an orthodox multiplication table.
+ * The leading '1' is just for formatting sake. 1 is not a prime.
  *
  * @param {number} limit The limit of the prime list
  * @returns {number[][]} The prime multiplication table as an array of array
@@ -18,6 +19,7 @@ export const generatePrimeMultiples = limit => {
 
   // Generate and append the primes at the top of the multiplication table
   let top = [...primes];
+  // !Note: The leading '1' is just for formatting sake. 1 is not a prime.
   top.unshift(1);
   multiples.push(top);
 
