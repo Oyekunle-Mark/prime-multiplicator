@@ -24,8 +24,13 @@ export const isPrime = num => {
  */
 export const primeList = limit => {
   const primes = [];
+  let start = 2;
 
-  for (let i = 2; i <= limit; i++) if (isPrime(i)) primes.push(i);
+  while (primes.length < limit) {
+    if (isPrime(start)) primes.push(start);
+
+    start++;
+  }
 
   return primes;
 };
