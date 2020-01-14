@@ -9,8 +9,8 @@ import { primeList } from './primeList';
  * @returns {number[][]} The prime multiplication table as an array of array
  */
 export const generatePrimeMultiples = limit => {
-  if (limit < 2) {
-    throw new Error('You need more than 1 number to generate multiples.');
+  if (limit < 1) {
+    throw new Error('You need to supply a positive number to generate multiples.');
   }
 
   const primes = primeList(limit);
