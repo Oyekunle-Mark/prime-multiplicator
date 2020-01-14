@@ -18,3 +18,9 @@ test('Generates the right range of primes', () => {
     result = primeList(20);
     expect(result).toEqual(primes);
 });
+
+test('primeList should throw with a useful error message', () => {
+    expect(() => {
+        primeList(-1)
+    }).toThrow('Limit must be 1 or greater.');
+})
