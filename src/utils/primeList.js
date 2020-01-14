@@ -23,6 +23,10 @@ export const isPrime = num => {
  * @returns {number[]} The list of prime numbers
  */
 export const primeList = limit => {
+  if (limit < 0) {
+    throw new Error('Limit must be 1 or greater.');
+  }
+
   const primes = [];
   let start = 2;
 
