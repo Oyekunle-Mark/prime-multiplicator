@@ -16,6 +16,12 @@ const isPrime = num => {
   return true;
 };
 
+/**
+ * Generates a range of prime numbers
+ *
+ * @param {number} end The upper limit of the prime numbers
+ * @returns {number[]} The list of prime numbers
+ */
 const primeList = end => {
   const primes = [];
 
@@ -23,3 +29,5 @@ const primeList = end => {
 
   return primes;
 };
+
+export default primeList;
