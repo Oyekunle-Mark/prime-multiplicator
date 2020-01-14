@@ -17,4 +17,4 @@ test('Generates the right range of primes', () => {
 
     result = primeList(20);
     expect(result).toEqual(primes);
-  });
+});

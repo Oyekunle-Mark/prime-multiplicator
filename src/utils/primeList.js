@@ -19,13 +19,13 @@ export const isPrime = num => {
 /**
  * Generates a range of prime numbers
  *
- * @param {number} end The upper limit of the prime numbers
+ * @param {number} limit The upper limit of the prime numbers
  * @returns {number[]} The list of prime numbers
  */
-export const primeList = end => {
+export const primeList = limit => {
   const primes = [];
 
-  for (let i = 2; i <= end; i++) if (isPrime(i)) primes.push(i);
+  for (let i = 2; i <= limit; i++) if (isPrime(i)) primes.push(i);
 
   return primes;
 };
