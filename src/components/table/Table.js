@@ -3,15 +3,16 @@ import React from 'react';
 import TableRow from '../row/TableRow';
 import { generatePrimeMultiples } from '../../utils/primeMultiples';
 
-const Table = ({size = 10}) => {
+const Table = ({ size = 10 }) => {
   const multTable = generatePrimeMultiples(size);
 
   return (
     <table>
-      {multTable.map(
-        (row, index) =>
-          index === 0 && <TableRow key={index} row={row} isThead />,
-      )}
+      <thead>
+        {multTable.map(
+          (row, index) => index === 0 && <TableRow key={index} row={row} />,
+        )}
+      </thead>
 
       <tbody>
         {multTable.map(
