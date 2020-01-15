@@ -5,7 +5,7 @@ const TableRow = ({ row, isThead = false }) =>
     <thead>
       <tr>
         {row.map((item, index) => (
-          <th key={index}>{item}</th>
+          <th key={index}>{item > 1 && item}</th>
         ))}
       </tr>
     </thead>
