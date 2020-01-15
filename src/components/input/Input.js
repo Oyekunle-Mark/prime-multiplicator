@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import './Input.css';
+
 const Input = ({ size, setSize }) => {
   const [isValid, setValid] = useState(true);
 
