@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <Input size={size} setSize={setSize} />
-      <Table />
+      <Table size={size} />
     </div>
   );
 };
