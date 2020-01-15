@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  
+test('renders the app container', () => {
+  const { container } = render(<App />);
+  expect(container.firstChild).toHaveClass('container');
 });
