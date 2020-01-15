@@ -23,7 +23,7 @@ const Input = ({ size, setSize }) => {
         placeholder="Enter table size..."
       />
 
-      {!isValid && <p>Table size must pe a positive integer.</p>}
+      {!isValid && <span>Table size must pe a positive integer.</span>}
     </div>
   );
 };
