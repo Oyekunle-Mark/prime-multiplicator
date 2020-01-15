@@ -1,15 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Input = ({ size, setSize }) => {
-  const onUpdate = e => setSize(e.target.value);
+  const [isValid, setValid] = useState(true);
+
+  const onUpdate = e => {
+    if (/^[1-9]\d*$/.test(e.target.value)) {
+      setSize(e.target.value);
+      setValid(true);
+    } else {
+      setValid(false);
+    }
+  };
 
   return (
-    <input
-      type="number"
-      value={size}
-      onChange={onUpdate}
-      placeholder="Enter table size..."
-    />
+    <div>
+      <input
+        type="number"
+        value={size}
+        onChange={onUpdate}
+        placeholder="Enter table size..."
+      />
+
+      {!isValid && <p>Table size must pe a positive integer.</p>}
+    </div>
   );
 };
 
