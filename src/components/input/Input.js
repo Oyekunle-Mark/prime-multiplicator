@@ -15,7 +15,7 @@ const Input = ({ size, setSize }) => {
   };
 
   return (
-    <div>
+    <div className="input">
       <input
         type="number"
         value={size}
