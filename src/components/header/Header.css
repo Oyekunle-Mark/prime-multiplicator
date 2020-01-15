@@ -1,0 +1,11 @@
+header {
+  width: 100vw;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 2px -2px #f1f1f1d2;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #04a541;
+  margin: 1rem;
+}
