@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import './Input.css';
+
 const Input = ({ size, setSize }) => {
   const [isValid, setValid] = useState(true);
 
@@ -13,7 +15,7 @@ const Input = ({ size, setSize }) => {
   };
 
   return (
-    <div>
+    <div className="input">
       <input
         type="number"
         value={size}
@@ -21,7 +23,7 @@ const Input = ({ size, setSize }) => {
         placeholder="Enter table size..."
       />
 
-      {!isValid && <p>Table size must pe a positive integer.</p>}
+      {!isValid && <span>Table size must pe a positive integer.</span>}
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Table.css';
+
 import TableRow from '../row/TableRow';
 import { generatePrimeMultiples } from '../../utils/primeMultiples';
 
