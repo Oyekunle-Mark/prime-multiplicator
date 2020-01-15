@@ -10,7 +10,7 @@ const Table = () => {
     <table>
       {multTable.map(
         (row, index) =>
-          index === 0 && <TableRow key={index} row={row} index={index} />,
+          index === 0 && <TableRow key={index} row={row} isThead />,
       )}
 
       <tbody>

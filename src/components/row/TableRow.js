@@ -1,7 +1,7 @@
 import React from 'react';
 
-const TableRow = ({ row, index }) =>
-  index === 0 ? (
+const TableRow = ({ row, isThead = false }) =>
+  isThead ? (
     <thead>
       <tr>
         {row.map((item, index) => (
