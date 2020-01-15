@@ -8,8 +8,8 @@ const Table = () => {
 
   return (
     <table>
-      {multTable.map(row => (
-        <TableRow row={row} />
+      {multTable.map((row, index) => (
+        <TableRow key={index} row={row} />
       ))}
     </table>
   );

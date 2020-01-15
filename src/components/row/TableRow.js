@@ -2,8 +2,8 @@ import React from 'react';
 
 const TableRow = ({ row }) => (
   <tr>
-    {row.map(item => (
-      <td>{item}</td>
+    {row.map((item, index) => (
+      <td key={index}>{item}</td>
     ))}
   </tr>
 );
