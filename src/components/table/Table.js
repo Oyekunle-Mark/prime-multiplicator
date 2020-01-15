@@ -8,9 +8,16 @@ const Table = () => {
 
   return (
     <table>
-      {multTable.map(row => (
-        <TableRow row={row} />
-      ))}
+      {multTable.map(
+        (row, index) =>
+          index === 0 && <TableRow key={index} row={row} isThead />,
+      )}
+
+      <tbody>
+        {multTable.map(
+          (row, index) => index > 0 && <TableRow key={index} row={row} />,
+        )}
+      </tbody>
     </table>
   );
 };
