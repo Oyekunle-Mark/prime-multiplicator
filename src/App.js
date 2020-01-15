@@ -1,14 +1,17 @@
-import React from 'react';
-import './App.css';
+import React, { useState } from 'react';
 
+import Input from './components/input/Input';
 import Table from './components/table/Table';
 
-function App() {
+const App = () => {
+  const [size, setSize] = useState(10);
+
   return (
     <div>
-      <Table />
+      <Input size={size} setSize={setSize} />
+      <Table size={size} />
     </div>
   );
-}
+};
 
 export default App;
