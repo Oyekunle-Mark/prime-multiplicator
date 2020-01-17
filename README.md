@@ -1,8 +1,8 @@
 # Prime Multiplicator
 
-This web application calculates and displays a multiplication table of the first n prime numbers. The size of the multiplication table is dynamic and can be increased and decreased at will.
+This web application calculates and displays a multiplication table of the first **n** prime numbers. The size of the multiplication table is dynamic and can be increased and decreased at will.
 
-You probably should not enter an arbitrarily large table size for performance reason.
+<font color='red'>You probably should not enter an arbitrarily large table size for performance reason.</font>
 
 ## Deploy
 
