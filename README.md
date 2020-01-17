@@ -8,6 +8,14 @@ You probably should not enter an arbitrarily large table size for performance re
 
 This web application is deployed on netlify and can be found [here](https://prime-multiplicator.netlify.com/)
 
+## Local Setup
+
+To setup this application on your computer, do the following:
+
+1. Clone this repository
+2. `cd` into the project folder
+3. Install all the dependencies with `npm i`
+  
 ## Available Scripts
 
 In the project directory, you can run:
