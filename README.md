@@ -4,6 +4,10 @@ This web application calculates and displays a multiplication table of the first
 
 You probably should not enter an arbitrarily large table size for performance reason.
 
+## Deploy
+
+This web application is deployed on netlify and can be found [here](https://prime-multiplicator.netlify.com/)
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -30,4 +34,3 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
