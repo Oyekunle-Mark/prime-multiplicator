@@ -1,4 +1,4 @@
-import { isPrime, primeList } from '../primeList';
+import { isPrime, primeList } from './primeList';
 
 test('Correctly checks for primality', () => {
   expect(isPrime(2)).toBeTruthy();
