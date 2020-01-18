@@ -3,10 +3,10 @@ import React from 'react';
 import './Table.css';
 
 import TableRow from '../row/TableRow';
-import { generatePrimeMultiples } from '../../utils/primeMultiples';
+import { primeGenerator } from '../../utils/primeGenerator';
 
 const Table = ({ size = 10 }) => {
-  const multTable = generatePrimeMultiples(size);
+  const multTable = primeGenerator(size);
 
   return (
     <table>
